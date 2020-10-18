@@ -1,0 +1,11 @@
+<div *ngFor="let todo of todos">
+<h3>
+    <a [title]="todo.title">
+      {{ todo.title }}
+    </a>
+  </h3>
+
+  <p *ngIf="todo.tododesc">
+    Description: {{ todo.tododesc }}
+  </p>
+</div>
